@@ -6,15 +6,10 @@
 Алгоритм установки:
 
 Шаг 1. Подготовка. 
-
 Зарегистрироваться на сайте heroku https://signup.heroku.com/signup/dc
-
 Установить Node.JS https://nodejs.org/en/download/
-
-установить Git https://git-scm.com/downloads
-
+Установить Git https://git-scm.com/downloads
 Установить программу heroku с сайта https://devcenter.heroku.com/articles/getting-started-with-nodejs#set-up
-
 Установите Visual Code для редактирование проекта https://code.visualstudio.com/Download
 
 Шаг 2. Создание проекта и публикация.
