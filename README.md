@@ -25,5 +25,5 @@
 кто разбирается, может взять описание в micro-bot, там описано как публиковать в heroku.  
 process.env.EMAIL - ваш email который указывали при регистрации в дребеденьгах.  
 process.env.PASSWORD - пароль от ящика выше.  
-process.env.SUBJECT - ключ от дребеденег который необходимо указать в теме письма на парсинг.  
+process.env.SUBJECT - ключ от дребеденег который необходимо указать в теме письма на парсинг (пункт 3 https://www.drebedengi.ru/?module=v2_aboutParser#email)  
 
