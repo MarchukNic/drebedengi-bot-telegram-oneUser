@@ -50,7 +50,12 @@ git init
 heroku create
 ```
 Heroku создаст проект с произвольным именем вида (https://murmuring-spire-99247.herokuapp.com/) (https://git.heroku.com/murmuring-spire-99247.git) где "murmuring-spire-99247" имя вашего проекта.  
-- Переменная с токен ключом бота телеграмм
+Переменные:  
+BOT_TOKEN токен ключ бота телеграмм  
+BOT_DOMAIN сайт на котором будет размещен бот, для webhook  
+EMAIL - ваш email который указывали при регистрации в дребеденьгах.  
+PASSWORD - пароль от ящика выше.  
+SUBJECT - ключ от дребеденег который необходимо указать в теме письма на парсинг (пункт 3 https://www.drebedengi.ru/?module=v2_aboutParser#email)
 ```bash
 heroku config:set --app murmuring-spire-99247 BOT_TOKEN='886571058:AAHPLRX7hEk8JkEYfYbVwrNzof0YoPt-qUxM'
 heroku config:set --app murmuring-spire-99247 BOT_DOMAIN='https://murmuring-spire-99247.herokuapp.com'
@@ -71,7 +76,5 @@ git push heroku master
 
 Все готово. можете отправлять сообщения, бот их перешлет на почту ДД и обработает согласно настроенными вами правилами https://www.drebedengi.ru/?module=v2_homeBuhPrivateImport&action=rules .
 
-EMAIL - ваш email который указывали при регистрации в дребеденьгах.  
-PASSWORD - пароль от ящика выше.  
-SUBJECT - ключ от дребеденег который необходимо указать в теме письма на парсинг (пункт 3 https://www.drebedengi.ru/?module=v2_aboutParser#email)  
+  
 
