@@ -35,7 +35,6 @@ function sendMail(ctx) {
             return ('Message sent: %s', info.messageId);
         });
     });
-    return info.messageId;
 }
 app.start((ctx) => ctx.reply('Добро пожаловать в пользовательский бот для Дребеденег! Можно отправить "Hi" для проверки работоспособности бота.'))
 app.hears('Hi', ({ reply }) => reply('Все нормально, бот работает!'))
