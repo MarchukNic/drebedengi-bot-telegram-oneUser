@@ -32,14 +32,17 @@ function sendMail(ctx) {
                 // app.telegram.sendMessage(error)
 
             }
-            return ('Message sent: %s', info.messageId);
+//             return ('Message sent: %s', info.messageId);
+            ctx.yyyyyy = `Сообщение [${ctx.message.text}] отправлено.`
+            return ctx.reply(ctx.yyyyyy);
         });
     });
 }
 app.start((ctx) => ctx.reply('Добро пожаловать в пользовательский бот для Дребеденег! Можно отправить "Hi" для проверки работоспособности бота.'))
 app.hears('Hi', ({ reply }) => reply('Все нормально, бот работает!'))
 app.on('message', function (ctx, next) {
-    ctx.reply(sendMail(ctx));
+    sendMail(ctx);
+    return ctx.reply(ctx.yyyyyy);
 });
 // Export bot handler
 module.exports = app
